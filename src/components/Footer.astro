@@ -1,0 +1,62 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer class="pb-20 md:pb-0">
+  <div
+    class="flex flex-col md:flex-row gap-6 md:gap-64 px-4 md:px-0 py-8 border-t-2 dark:border-light border-dark"
+  >
+    <div>
+    
+      <h2 class="pb-4 text-2xl">Kontakt</h2>
+      <div class="flex flex-row mb-2">
+        <span><Icon name="octicon:person-24" class="h-6 mr-2"/></span>
+        <p>LAT-Petershagen e.V.</p>
+      </div>
+      <div class="flex flex-row mb-2">
+        <span><Icon name="line-md:email-twotone" class="h-6 mr-2"/></span><a 
+        href="/"
+        class="hover:text-orange-600"
+        >Leichtathletik.Richter@gmx.de</a>
+      </div>
+<div class="flex flex-row">
+  <span><Icon name="gg:phone" class="h-6 mr-2"/></span><a
+  href="/"
+  class="hover:text-orange-600"
+  >+49 176 625 237 66</a>
+</div>
+
+    </div>
+    <div class="pt-8 md:pt-0">
+      <h2 class="pb-4 text-2xl">Rechtliche Hinweise</h2>
+      <ul class="">
+        <li class="flex flex-row">
+          <span><Icon name="ri:arrow-drop-right-line" class="h-6"/></span>
+          <a
+            href="/impressum"
+            class="hover:text-orange-600"
+            >Impressum</a
+          >
+        </li>
+        <li class="flex flex-row">
+          <span><Icon name="ri:arrow-drop-right-line" class="h-6"/></span>
+          <a
+            href="/datenschutz"
+            class="hover:text-orange-600"
+            >Datenschutz</a
+          >
+        </li>
+        <li class="flex flex-row">
+          <span><Icon name="ri:arrow-drop-right-line" class="h-6"/></span>
+          <a
+            href="/kontakt"
+            class="hover:text-orange-600">Kontakt</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t-2 dark:border-light border-dark py-2 text-center">
+    <p><span class="text-xl">&#169;</span> LAT-Petershagen</p>
+  </div>
+</footer>
