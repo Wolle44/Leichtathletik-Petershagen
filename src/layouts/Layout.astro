@@ -2,6 +2,7 @@
 import Navigation from "../components/Navigation.astro"
 import {ViewTransitions} from 'astro:transitions';
 import Footer from "../components/Footer.astro"
+import NavigationMobile from "../components/NavigationMobile.astro"
 interface Props {
 	title: string;
 }
@@ -21,16 +22,17 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
-		<nav class="bg-white h-16">
+		<nav class="bg-white h-16 md:block hidden">
 			<Navigation />
 		</nav>
 		<main>
 			<slot />
 		</main>
-		<footer class="mx-12">
+		<footer class="md:mx-12 mx-0">
 			<Footer />
+			
 		</footer>
-		
+		<NavigationMobile />
 	</body>
 </html>
 <style is:global>

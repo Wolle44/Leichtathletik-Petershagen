@@ -13,7 +13,7 @@ import Huerden from "../images/Huerden.jpg"
 
 <Layout title="LAT-Petershagen">
     <header>
-        <div>
+        <div class="pt-12 md:pt-0">
             <Image
                 src={Huerden}
                 width={1900}
@@ -23,11 +23,11 @@ import Huerden from "../images/Huerden.jpg"
                 alt=""
               />	
         </div>
-        <div class="flex items-center justify-center text-4xl h-24 bg-orange-500 text-white font-semibold">
-            <h1 class="text-4xl">Leichtathletikteam - Petershagen e.V.</h1>
+        <div class="flex items-center justify-center h-24 bg-orange-500 text-white">
+            <h1 class="text-2xl md:text-4xl md:font-medium">Leichtathletikteam - Petershagen e.V.</h1>
         </div>
     </header>
-    <div class="flex justify-center pt-28">
+    <div class="flex justify-center pt-14 md:pt-28 mx-32">
         <div>
             <Image
                 src={Maskottchen}
@@ -48,8 +48,7 @@ import Huerden from "../images/Huerden.jpg"
             Hürden sind für uns keine Hindernisse, sondern Herausforderungen auf dem Weg zum Ziel. <br>
         </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-24 md:gap-8 justify-center mx-4 md:mx-12 my-28">
-
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 justify-center mx-2 md:mx-12 my-14 md:my-28">
         <Card>
             <span slot="title">Laufen</span>
             <div class="flex justify-center flex-col pt-4">
@@ -115,7 +114,7 @@ import Huerden from "../images/Huerden.jpg"
         </Card>
 
     </div>
-    <div class="flex flex-row justify-center items-center gap-60 bg-slate-400 py-12">
+    <div class="flex md:flex-row flex-col justify-center items-center gap-16 md:gap-60 bg-slate-400 py-12 px-12">
         <div>
             <Image
                 src={logo_lvbrandenburg}
